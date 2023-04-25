@@ -1,7 +1,8 @@
 const express = require('express')
 const session = require('express-session')
 const MongoStore = require('connect-mongo')
-const app = express() //calls express
+const flash = require('connect-flash')
+const app = express()
 
 let sessionOptions = session({
     secret: "JavaScript is cool",
@@ -12,6 +13,7 @@ let sessionOptions = session({
 })
 
 app.use(sessionOptions)
+app.use(flash())
 
 const router = require('./router')
 
