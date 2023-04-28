@@ -105,12 +105,11 @@
                                     </div>
 
                                     <!-- FUTURE ME LOOK HERE: add 'file upload' input here for user profile pic during user registration. 4/27 I cant get it to work how i want to so i need a break from this -->
-                                    <!-- <div class="form-group">
-                                        <label for="avatar-register" class="text-muted mb-1"><small>Profile
-                                                Picture</small>
-                                            <input type="file" class="form-control nes-btn">
-                                        </label>
-                                    </div> -->
+                                    <form action="/profile" method="post" enctype="multipart/form-data">
+                                        <label for="profilepicture-register"
+                                            class="text-muted mb-1"><small>Upload Profile Picture</small></label>
+                                        <input type="file" name="avatar" />
+                                      </form>
 
                                     <button type="submit"
                                         class="py-3 mt-4 btn btn-lg btn-success btn-block nes-btn is-success"
