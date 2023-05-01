@@ -1,5 +1,5 @@
 <footer class="border-top text-center small text-muted py-3">
-    <p class="m-0">Copyright &copy; 2023 <a href="/" class="text-muted">Bloggle</a>. All
+    <p class="m-0">Copyright &copy; <span id="year"></span> <a href="/" class="text-muted">Bloggle</a>. All
         rights reserved.</p>
 </footer>
 
@@ -12,7 +12,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-<script>$('[data-toggle="tooltip"]').tooltip()</script>
+<script>$('[data-toggle="tooltip"]').tooltip()
+//get the current year for the copyright in footer
+$('#year').text(new Date().getFullYear());
+</script>
 </body>
 
 </html>
