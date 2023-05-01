@@ -398,3 +398,7 @@ textarea.tall-textarea {
   outline: none;
   font-size: .75rem;
 }
+
+footer {
+  cursor: auto;
+}
